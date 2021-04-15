@@ -9,19 +9,19 @@
 	
 		<!-- 첫 페이지로 이동 -->
 		<%	if(paging.getCurPage() != 1) { //첫 페이지가 아닐 때 보임 %>
-		<li><a href="/board/list">&larr;</a></li>
+		<li><a href="?">&larr;</a></li>
 		<%	} %>
 		
 		<!-- 이전 페이징 리스트로 가기 -->
 		<%	if(paging.getStartPage() > paging.getPageCount()) { %>
-		<li><a href="/board/list?curPage=<%=paging.getStartPage() - paging.getPageCount() %>">&laquo;</a></li>
+		<li><a href="?curPage=<%=paging.getStartPage() - paging.getPageCount() %>">&laquo;</a></li>
 		<%	} else { %>
 		<li class="disabled"><a>&laquo;</a></li>
 		<%	} %>
 		
 		<!-- 이전 페이지로 가기 -->
 		<%	if(paging.getCurPage() != 1) { %>
-		<li><a href="/board/list?curPage=<%=paging.getCurPage() - 1 %>">&lt;</a></li>
+		<li><a href="?curPage=<%=paging.getCurPage() - 1 %>">&lt;</a></li>
 		<%	} %>
 		
 		
@@ -30,9 +30,9 @@
 		<!-- 페이징 리스트 -->
 		<%	for(int i=paging.getStartPage(); i<=paging.getEndPage(); i++) { %>
 		<%		if( i == paging.getCurPage() ) { %>
-		<li class="active"><a href="/board/list?curPage=<%=i %>"><%=i %></a></li>
+		<li class="active"><a href="?curPage=<%=i %>"><%=i %></a></li>
 		<%		} else { %>
-		<li><a href="/board/list?curPage=<%=i %>"><%=i %></a></li>
+		<li><a href="?curPage=<%=i %>"><%=i %></a></li>
 		<%		} %>
 		<%	} %>
 		
@@ -41,7 +41,7 @@
 
 		<!-- 다음 페이지로 가기 -->
 		<%	if(paging.getCurPage() != paging.getTotalPage()) { %>
-		<li><a href="/board/list?curPage=<%=paging.getCurPage() + 1 %>">&gt;</a></li>
+		<li><a href="?curPage=<%=paging.getCurPage() + 1 %>">&gt;</a></li>
 		<%	} %>
 
 
@@ -49,7 +49,7 @@
 
 		<!-- 다음 페이징 리스트로 가기 -->
 		<%	if(paging.getEndPage() != paging.getTotalPage()) { %>
-		<li><a href="/board/list?curPage=<%=paging.getStartPage() + paging.getPageCount() %>">&raquo;</a></li>
+		<li><a href="?curPage=<%=paging.getStartPage() + paging.getPageCount() %>">&raquo;</a></li>
 		<%	} else { %>
 		<li class="disabled"><a>&raquo;</a></li>
 		<%	} %>
@@ -59,7 +59,7 @@
 
 		<!-- 마지막 페이지로 가기 -->
 		<%	if(paging.getCurPage() != paging.getTotalPage()) { %>
-		<li><a href="/board/list?curPage=<%=paging.getTotalPage() %>">&rarr;</a></li>
+		<li><a href="?curPage=<%=paging.getTotalPage() %>">&rarr;</a></li>
 		<%	} %>
 		
 	</ul>

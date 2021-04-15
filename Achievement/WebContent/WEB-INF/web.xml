@@ -4,21 +4,16 @@
   <welcome-file-list>
     <welcome-file>main</welcome-file>
   </welcome-file-list>
-  <!-- 필터 클래스 등록 -->
   <filter>
-  	<filter-name>HangulEncodingFilter</filter-name>
-  	<filter-class>filter.EncodingFilter</filter-class>
-  	<!-- 초기화 파라미터 -->
- 	<!-- 필터가 초기화될 때 init()메소드에 전달되는 변수(파라미터) -->
- 	<init-param>
- 		<param-name>enc</param-name>
- 		<param-value>UTF-8</param-value>
- 	</init-param>
+    <filter-name>HangulEncodingFilter</filter-name>
+    <filter-class>filter.EncodingFilter</filter-class>
+    <init-param>
+      <param-name>enc</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
   </filter>
-  
-  <!-- 필터 클래스가 동작하게될 url-pattern 지정 -->
   <filter-mapping>
-  	<filter-name>HangulEncodingFilter</filter-name>
-  	<url-pattern>/*</url-pattern> <!-- 모든 필터에 반응한다 -->
+    <filter-name>HangulEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
   </filter-mapping>
 </web-app>

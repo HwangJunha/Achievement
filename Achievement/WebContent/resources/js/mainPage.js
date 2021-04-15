@@ -57,6 +57,8 @@ $( document ).ready( function() {
 		})
 	})//end mainBest
 	
+	fbest.click()
+	
 	$('#floatingBest').click(function(){
 		fbest.click()
 	})

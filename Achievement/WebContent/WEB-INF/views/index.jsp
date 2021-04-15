@@ -4,6 +4,7 @@
 <%@ include file="/WEB-INF/views/layout/navigation.jsp" %>
 
 
+
 <div style="background-color: #2E75B6;" class="floating">
 	<div id="floatingBest"><a href="#resultAjax">베스트챌린지</a></div>
 	<div id="floatingPopularity"><a href="#resultAjax">인기 챌린지</a></div>
@@ -14,7 +15,7 @@
 
 <section id="summery">
 	<div id="summeryDiv">
-		<img src="/resources/img/challengeLogo.jpg" width="400px" height="300px">
+		<img src="/resources/img/AchievementWhite.png" width="400px" height="300px">
 	</div>
 	<div>
 		투명하되 사는가 실현에 품었기 아름다우냐? 찾아다녀도, 영락과 예가 천하를 풀밭에 커다란 철환하였는가? 얼음과 보이는 지혜는 피가 수 뿐이다. 뭇 가는 천고에 온갖 부패뿐이다. 아니한 귀는 힘차게 방지하는 그들에게 천지는 어디 곧 부패뿐이다. 인간은 그들을 있는 인생에 장식하는 실로 것이다. 불러 그와 무엇을 것이다. 아니더면, 심장은 미인을 있으며, 그리하였는가? 오직 없는 있는 이성은 소리다.이것은 가치를 커다란 청춘은 수 사막이다. 가진 든 영락과 피가 속에 남는 투명하되 말이다.

@@ -24,7 +24,7 @@ public class MemberLoginCotroller extends HttpServlet {
 	private MemberService memberService = new MemberServiceImpl();
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	
+		
 		req.getRequestDispatcher("/WEB-INF/views/member/login.jsp")
 			.forward(req, resp);
 	}
@@ -32,12 +32,13 @@ public class MemberLoginCotroller extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			
 		//전달파라미터 얻기 - 로그인 정보
-		Member mem = memberService.getLoginMember(req,"U");
+		Member mem = memberService.getLoginMember(req);
 		String[] check = req.getParameterValues("idRemember");
 		boolean login = memberService.login(mem);
 		if(login) {
 			//로그인 사용자의 정보 얻어오기
 			mem = memberService.info(mem);
+			
 			
 			//세션 정보 저장하기
 			HttpSession session = req.getSession();		
@@ -67,7 +68,10 @@ public class MemberLoginCotroller extends HttpServlet {
 				}
 			}
 			
-			
+			if("M".equals(mem.getUgrade())) { //관리자일경우
+				resp.sendRedirect("/admin");
+				return;
+			}
 		}
 		
 		resp.sendRedirect("/");

@@ -23,7 +23,6 @@ public class MemberDaoImpl implements MemberDao {
 		sql += " WHERE 1=1";
 		sql += "	AND u_id = ?";
 		sql += "	AND u_password = ?";
-		sql += "	AND u_grade = ?";
 		
 		//결과 저장할 변수
 		int cnt = -1;
@@ -33,7 +32,6 @@ public class MemberDaoImpl implements MemberDao {
 			
 			ps.setString(1, member.getUid());
 			ps.setString(2, member.getUpassword());
-			ps.setString(3, member.getUgrade());
 			
 			rs = ps.executeQuery(); //SQL 수행 및 결과집합 저장
 			

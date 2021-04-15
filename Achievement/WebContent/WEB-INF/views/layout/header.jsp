@@ -16,7 +16,7 @@
 <header>
 	<div class="left">
 		<a href = "/">
-			<img src="/resources/img/logo.png" width="250" height="40"
+			<img src="/resources/img/AchievementWhite.png" width="250" height="100"
 		alt="Achievement"  title="Achievement"> </a>
 	</div>
 	
@@ -29,11 +29,11 @@
 			<ul>
 				<li><a href="/member/login">로그인</a></li>
 				<li><a href="#">회원가입</a></li>
-				<li><a href="#">마이페이지</a></li>
 			</ul>
 			<%}else if((boolean)session.getAttribute("login") && "U".equals((String)session.getAttribute("u_grade"))) {%>
 				<ul>
 					<li><a href="/member/logout">로그아웃</a></li>
+					<li><a href="#">마이페이지</a></li>
 				</ul>
 			<%} %>
 		</li>

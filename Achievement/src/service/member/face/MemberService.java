@@ -12,7 +12,7 @@ public interface MemberService {
 	 *  @return Member - 로그인 정보
 	 * 
 	 */
-	public Member getLoginMember(HttpServletRequest req, String grade);
+	public Member getLoginMember(HttpServletRequest req);
 	
 	/**
 	 * 로그인 처리

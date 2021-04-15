@@ -12,13 +12,11 @@ public class MemberServiceImpl implements MemberService{
 	
 	private MemberDao memberDao = new MemberDaoImpl();
 	@Override
-	public Member getLoginMember(HttpServletRequest req, String grade) {
+	public Member getLoginMember(HttpServletRequest req) {
 		Member member = new Member();
 		
 		member.setUid(req.getParameter("userid"));
 		member.setUpassword(req.getParameter("userpwd"));
-		member.setUgrade(grade);
-		
 		
 		return member;
 	}
