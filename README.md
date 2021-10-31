@@ -34,5 +34,7 @@ Achievment는 핸드폰 어플리케이션인 챌린져스를 벤치마킹한 �
 + 구글차트 API
 + 네이버 스마트 에디터2
 
-
+## :bulb:Database Instruction.txt
++ id:scott pw:tiger 
++ 처음 실행시 DROP TABLE, DROP SEQUENCE 명령어가 있기 때문에 오류가 날 수 있습니다.
 
