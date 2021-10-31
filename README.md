@@ -37,4 +37,4 @@ Achievment는 핸드폰 어플리케이션인 챌린져스를 벤치마킹한 �
 ## :bulb:Database Instruction.txt
 + id:scott pw:tiger 
 + 처음 실행시 DROP TABLE, DROP SEQUENCE 명령어가 있기 때문에 오류가 날 수 있습니다.
-
++ **ORACLE 데이터베이스**를 사용해주세요
