@@ -165,13 +165,13 @@ $(document).ready(function(){
 			dataType : "json",
 			success : function(res) {
  				console.log("별명중복체크 성공")
- 				console.log(res.result )
+ 				console.log(res.res)
 				
-				if(res.result) {
-		    		 $("#nickMsg").removeClass("color-correct").html("이미 사용중인 별명입니다")
+				if(res.res) {
+		    		 $("#nickMsg").removeClass("color-correct").html(res.res)
 
 				} else {
-		    		 $("#nickMsg").addClass("color-correct").html("사용 가능한 별명입니다")
+		    		 $("#nickMsg").addClass("color-correct").html(res.res)
 				}
  			},
 			error : function() {
@@ -528,9 +528,6 @@ $(document).ready(function(){
 </div><br><br>
 
  
-  
-  
-  
 
 </div> 
 </form>

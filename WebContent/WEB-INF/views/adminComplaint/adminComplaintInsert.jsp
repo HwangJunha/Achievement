@@ -63,7 +63,8 @@ $(document).ready(function() {
 		<tr style="line-height:32px;">	
 			<tr>
 			<td>챌린지 번호</td><td><input type="text" name="chNo" class="form-control" id="ch_no" placeholder="선택하세요" style="cursor:pointer;"readonly/></td>                            
-     		</tr>                                                                                                        
+     		</tr>                                              
+     		                                                          
             
             <tr>                
             <td>관리자 아이디</td><td><input type="text" name="comUid" class="form-control" value="<%=session.getAttribute("u_id") %>" readonly ></td>              

@@ -27,7 +27,8 @@ $(document).ready(function(){
 	$("tr").click(function(){
 		//등록 페이지 챌린지 번호에 반영하기
 		$('#ch_no',parent.opener.document).val($(this).children().children("input[name='ch_no']").val())
-		 console.log($(this).children().children("input[name='ch_no']").val())
+		
+		console.log($(this).children().children("input[name='ch_no']").val())
 	})
 })
 </script>
